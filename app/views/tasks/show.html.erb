@@ -1,7 +1,16 @@
-<h1> <%= @tasks.title %></h1>
+<h1> <%= @task.title %></h1>
 
+
+<%= link_to "Edit Task", edit_path %>
+
+<% message_completed = @task.completed ? "This task is completed" : "This task is not completed" %>
 
 <div class="task-details">
-  <p> <%= @tasks.details %></p>
+  <p> <%= @task.details %></p>
+   <%= check_box_tag @task.id, @task.title, @task.completed %>
+   <%= message_completed %>
 </div>
+
+
+
 
