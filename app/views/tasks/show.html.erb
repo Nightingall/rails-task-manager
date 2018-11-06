@@ -1,7 +1,7 @@
 <h1> <%= @task.title %></h1>
 
 
-<%= link_to "Edit Task", edit_path %>
+<%= link_to "Edit Task", edit_path, class: "btn btn-primary" %>
 
 <% message_completed = @task.completed ? "This task is completed" : "This task is not completed" %>
 
@@ -14,3 +14,7 @@
 
 
 
+<!-- <button type="button" class="btn btn-primary">Primary</button>
+
+<i class="far fa-trash-alt"></i>'.html_safe
+ -->
