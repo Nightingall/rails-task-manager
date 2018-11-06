@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+
+.task-details {
+  background-color: #EFF3EF;
+  width: 90%;
+  border-radius: 25px;
+}
+
+.task-details p {
+  padding: 30px;
+}
